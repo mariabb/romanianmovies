@@ -5,7 +5,7 @@ cd romanianmovies<br>
 manage.py startapp movie<br>
 python manage.py runserver<br>
 python manage.py startapp accounts<br>
-python manage.py startupp news<br>
+python manage.py startapp news<br>
 python manage.py runserver<br>
 http://127.0.0.1:8000/<br>
  or<br>
