@@ -25,7 +25,8 @@ I used PythonAnywhere to host Python-based web applications directly from the pl
 3. `cd romanianmovies `
 4. To install the packages listed in a requirements.txt file, run the command: 
 `pip install -r requirements`
-5.open the settings file in Web section and modify the path, then:
+
+5. open the settings file in Web section and modify the path, then:
 * `DEBUG = True`
 * `ALLOWED_HOSTS = [‘https://mariab.pythonanywhere.com/’] `
 6. To  upload images, additional settings are required; see the instruction s here: https://www.pythonanywhere.com/
