@@ -53,12 +53,12 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Static files (CSS, JavaScript, images)
-staticfiles/
-*.pyc
+# # Static files (CSS, JavaScript, images)
+# staticfiles/
+# *.pyc
 
-# Media files
-media/
+# # Media files
+# media/
 
 # Sphinx documentation
 docs/_build/
