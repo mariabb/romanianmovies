@@ -16,7 +16,7 @@
 docker-compose up<br>
 http://localhost:8000/
 
-# 🐍 Production https://www.pythonanywhere.com/
+# 🐍 Production https://mariab.pythonanywhere.com/
 I used PythonAnywhere to host Python-based web applications directly from the platform. It supports web frameworks such as Django, Flask, and web2py, among others.
 
 1. git clone https://github.com/mariabb/romanianmovies.git  (clone the Repository from git hub, this is the name in my case)
