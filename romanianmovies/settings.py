@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'movie',
     'news',
     'accounts',
-    'star_ratings',
+    #'star_ratings',
     'django_extensions',
     'debug_toolbar',
 ]
