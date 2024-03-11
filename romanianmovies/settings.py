@@ -16,7 +16,7 @@ from pathlib import Path
 
 import debug_toolbar
 
-
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,19 +26,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-77n^62tk--**hrtyhgm7#lcai3cz^(e=z@6=$6ug=@#t@63s61'
+SECRET_KEY = config('SECRET_KEY')
 
 if debug_toolbar:
     import socket  # only if you haven't already imported this
     hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
     INTERNAL_IPS = [ip[: ip.rfind(".")] + ".1" for ip in ips] + ["192.168.65.1", "127.0.0.1", "10.0.2.2"]
 
-# if debug:
-#     # `debug` is only True in templates if the vistor IP is in INTERNAL_IPS.
-#     INTERNAL_IPS = type("c", (), {"__contains__": lambda *a: True})()
     
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
+#We want to protect our SECRET KEY and do not show in github (only in .env file)
+DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = []
 
